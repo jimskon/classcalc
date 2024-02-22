@@ -5,6 +5,9 @@ var buttons = document.querySelectorAll("button");
 for (var button of buttons) {
   button.addEventListener("click", function (e) {
     var value = e.target.getAttribute("data-value");
+    if (value == "X") {
+      value = "*";
+    }
     if (value != "=" && value != "C") {      
       result.innerHTML += value;
     } else if (value == "C") {
