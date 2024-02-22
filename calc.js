@@ -3,7 +3,7 @@ var result = document.getElementById("result");
 var buttons = document.querySelectorAll("button");
 
 function isOp(v) {
-  if (v == "X" || v == "/" || v == "+" || v == "-")
+  if (v == "X" || v == "/" || v == "+" || v == "-" || v == "*")
     return true;
   else
     return false;
