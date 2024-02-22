@@ -7,6 +7,11 @@ for (var button of buttons) {
     var value = e.target.getAttribute("data-value");
     if (value != "=" && value != "C") {      
       result.innerHTML += value;
+    } else if (value == "C") {
+      result.innerHTML = "";
+    } else if (value == "=") {
+      r = eval(result.innerHTML);
+      result.innerHTML = r;
     }
   });
 }
