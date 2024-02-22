@@ -1,8 +1,11 @@
 
 var result = document.getElementById("result");
-var clear = document.getElementById("clear");
+var buttons = document.querySelectorAll("button");
 
-clear.addEventListener("click", function (e) {
-  console.log(e.target.id);
-  result.innerHTML = "CLEAR!!";
-});
+for (var button of buttons) {
+  button.addEventListener("click", function (e) {
+    var value = e.target.getAttribute("data-value");
+    result.innerHTML = value;
+  });
+}
+
