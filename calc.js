@@ -10,6 +10,7 @@ for (var button of buttons) {
     } else if (value == "C") {
       result.innerHTML = "";
     } else if (value == "=") {
+      console.log(result.innerHTML);
       r = eval(result.innerHTML);
       result.innerHTML = r;
     }
