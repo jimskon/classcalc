@@ -1,4 +1,5 @@
-
+// Simple calculator created in class 2024
+/// James Skon and COMP318 class
 var result = document.getElementById("result");
 var buttons = document.querySelectorAll("button");
 
